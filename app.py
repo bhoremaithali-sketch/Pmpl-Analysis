@@ -4,7 +4,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Read the CSV file
-df = pd.read_csv("PMPML_OneDay_Data.xlsx")
+df = pd.read_csv("pmpl.csv",encoding="latin1")
 
 @app.route("/")
 def home():
